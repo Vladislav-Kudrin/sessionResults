@@ -1,0 +1,53 @@
+.button {
+    -fx-cursor: hand;
+    -fx-background-color: #777777;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: Consolas;
+    -fx-font-size: 14px;
+}
+
+.choice-box .label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-family: Consolas;
+}
+
+.choice-box .arrow {
+    -fx-background-color: #FFFFFF;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #777777;
+}
+
+.choice-box {
+    -fx-background-color: #777777;
+    -fx-mark-color: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab {
+    -fx-cursor: hand;
+}
+
+.tab .tab-label {
+    -fx-font-family: Consolas;
+    -fx-font-size: 14px;
+}
+
+.table-view {
+    -fx-font-family: Consolas;
+    -fx-background-color: #FFFFFF;
+}
+
+.table-view .table-cell {
+    -fx-border-color: #FFFFFF;
+}
+
+.table-row-cell:focused {
+    -fx-background-color: #777777;
+}
