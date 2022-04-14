@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="generalGridPane" alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.152"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ConfigController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <AnchorPane fx:id="generalAnchorPane" prefHeight="292.0" prefWidth="302.0" style="-fx-background-color: #555555;"
+                stylesheets="@assets/css/style.css">
+        <TextField fx:id="hostTextField" layoutX="16.0" layoutY="16.0" prefHeight="30.0" prefWidth="270.0"
+                   promptText="Хост">
+           <font>
+               <Font name="Consolas" size="14.0"/>
+           </font>
+        </TextField>
+        <TextField fx:id="portTextField" layoutX="16.0" layoutY="62.0" prefHeight="30.0" prefWidth="270.0"
+                   promptText="Порт">
+           <font>
+               <Font name="Consolas" size="14.0"/>
+           </font>
+        </TextField>
+        <TextField fx:id="userTextField" layoutX="16.0" layoutY="108.0" prefHeight="30.0" prefWidth="270.0"
+                   promptText="Пользователь">
+           <font>
+               <Font name="Consolas" size="14.0"/>
+           </font>
+        </TextField>
+        <PasswordField fx:id="passwordPasswordField" layoutX="16.0" layoutY="154.0" prefHeight="30.0" prefWidth="270.0"
+                       promptText="Пароль">
+           <font>
+               <Font name="Consolas" size="14.0"/>
+           </font>
+        </PasswordField>
+        <TextField fx:id="databaseTextField" layoutX="16.0" layoutY="200.0" prefHeight="30.0" prefWidth="270.0"
+                   promptText="База данных">
+           <font>
+               <Font name="Consolas" size="14.0"/>
+           </font>
+        </TextField>
+        <Button fx:id="connectButton" layoutX="92.0" layoutY="246.0" mnemonicParsing="false"
+                onAction="#onClickConnectButton" prefHeight="30.0" prefWidth="115.0" text="Подключиться"/>
+        <Label fx:id="issueLabel" layoutX="82.0" layoutY="230.0" text="ОШИБКА ПОДКЛЮЧЕНИЯ" textFill="GOLD"
+               visible="false">
+           <font>
+               <Font name="Consolas Bold" size="14.0"/>
+           </font>
+        </Label>
+    </AnchorPane>
+</GridPane>
